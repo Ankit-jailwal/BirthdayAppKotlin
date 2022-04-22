@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LearningKotlin</string>
+    <string name="enter_name">Enter name</string>
 </resources>
