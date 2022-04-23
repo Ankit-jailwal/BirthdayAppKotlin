@@ -1,5 +1,6 @@
 package com.example.learningkotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,6 +15,13 @@ class MainActivity : AppCompatActivity() {
 
     fun createBirthdayCard(view: View) {
         val name = nameInput.editableText.toString()
-        Toast.makeText(this, "Happy Birthday $name", Toast.LENGTH_SHORT).show()
+        // Used for navigation in kotlin
+        val intent = Intent(this, BirthdayActivity::class.java)
+
+        intent.putExtra("name",name)
+        startActivity(intent)
+
+//        val name = nameInput.editableText.toString()
+//        Toast.makeText(this, "Happy Birthday $name", Toast.LENGTH_SHORT).show()
     }
 }
