@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         // Used for navigation in kotlin
         val intent = Intent(this, BirthdayActivity::class.java)
 
-        intent.putExtra("name",name)
+        intent.putExtra(BirthdayActivity.Name_Val,name)
         startActivity(intent)
 
 //        val name = nameInput.editableText.toString()
